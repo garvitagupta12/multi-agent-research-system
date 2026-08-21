@@ -6,7 +6,12 @@ from tools import web_searching, url_scrapping
 from dotenv import load_dotenv
 load_dotenv()
 
-llm = ChatMistralAI(model="mistral-small-2506")
+llm = ChatMistralAI(
+    model="mistral-small-2506",
+    temperature=0,
+    max_retries=5
+)
+
 parser=StrOutputParser()
 
 def search_agent():
