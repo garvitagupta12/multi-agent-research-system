@@ -36,7 +36,7 @@ writer_prompt = ChatPromptTemplate.from_messages([
     - Introduction
     - Key findings 
     - Conclusion 
-    - Sourcse (list all URLs found in the research)
+    - Sources (list all URLs found in the research)
 
     Be detailed, factual and professional. """)
 ])
@@ -45,7 +45,7 @@ writer_chain = writer_prompt | llm | parser
 
 critic_prompt = ChatPromptTemplate.from_messages([
     ("system","you are a sharp and constructive research critic. Be extremely honest."),
-    ("human", """Review the research report given below and evaluate it strictly.messages
+    ("human", """Review the research report given below and evaluate it strictly.
     Report:
     {report}
     Respond in this format : 
