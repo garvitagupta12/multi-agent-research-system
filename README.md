@@ -1,5 +1,7 @@
 # 🤖 Multi-Agent Research System
 
+[![🚀 Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://multiagent-research-systems.streamlit.app/)
+
 An AI-powered **multi-agent research system** that automates the process of researching topics across the web.
 
 The system combines **Tavily web search**, **BeautifulSoup web scraping**, and **LLM-powered agents** to search for relevant information, extract useful content, and generate a consolidated research response.
